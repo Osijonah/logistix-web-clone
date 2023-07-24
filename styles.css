@@ -365,11 +365,9 @@ header nav{
     width: 1000px;
 }
 .section10-div1{
-    border: 1px solid black;
     width: 40%;
 }
 .section10-div2{
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
