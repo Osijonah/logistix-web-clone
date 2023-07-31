@@ -1,13 +1,12 @@
 html{
     font-family:TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    /* overflow-x: hidden; */
 }
 body{
-    display: block;
-    /* box-sizing: border-box; */
-    margin: 0 auto;
-    max-width: 100%;
-    /* overflow-x: hidden; */
-    padding: 15px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
 }
 a{
     cursor: pointer;
@@ -183,6 +182,8 @@ header nav{
 }
 .section3-div2>div{
     display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
     border: 0.5px solid #ffaa0044;
     border-radius: 4px;
     padding: 10px 10px;
@@ -195,6 +196,7 @@ header nav{
 }
 .ion{
     display: block;
+    box-sizing: border-box;
     background-color: #ffaa001a;
     color: #ffaa00;
     height: 30px;
@@ -208,11 +210,13 @@ header nav{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-/* .soon{
+
+.soon{
     position: relative;
-    right: 0;
-    bottom: 50px;
-} */
+    left: 100px;
+    bottom: 0;
+    font-size: small;
+}
 .section4-div{
     background-color: #ffffff;
     border-radius: 4px;
@@ -308,6 +312,17 @@ header nav{
     padding: 20px;
     height: 100px;
 }
+.learn-how{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 20px;
+}
+.play-circle-div{
+    border: 1px solid #000;
+    display: inline-block;
+    margin-top: 10px;
+}
 .step{
     font-size: small;
 }
@@ -374,6 +389,11 @@ header nav{
 .section6-div{
     background-image: url(imgs/splash.png);
     background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     box-sizing: border-box;
     border-radius: 70px;
     margin: auto;
@@ -384,22 +404,46 @@ header nav{
     -moz-border-radius: 70px;
     -ms-border-radius: 70px;
     -o-border-radius: 70px;
-    padding: 30px;
+    padding: 60px;
 }
 .text{
     color: #ffffff;
+}
+.section6-div1-1,.section6-div1-2,.section6-div1-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .section6-div1{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 0 auto;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     width: 400px;
 }
+.icon{
+    border: 1px solid rgba(131, 131, 131, 0.39);
+    background-color: #66666633;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    height: 60px;
+    width: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+.icon ion-icon{
+    color: rgba(131, 131, 131, 0.39);
+    font-size: 20px;
+}
 .section6-div2{
-    margin: 0 auto;
-    margin-top: 100px;
+    /* margin: 0 auto;
+    margin-top: 100px; */
     width: 300px;
 }
 .section6-div2>h2{
@@ -411,18 +455,25 @@ header nav{
     text-align: center;
 }
 .section6-div3{
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
-    width: 300px;
+    width: 320px;
 }
 .section6-btn{
     background-color: #ffffff;
     border: none;
     border-radius: 6px;
+    display: flex;
+    align-items: center;
     padding: 6px 20px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+}
+.section6-btn>div>ion-icon{
+    font-size: 20px;
 }
 .section7-div1{
     display: flex;
@@ -443,9 +494,16 @@ header nav{
 .section7-img-div img{
     width: 70%;
 }
+.section7-div1-3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 310px;
+}
 .section7-btn{
     background-color: #000;
     border: none;
+    align-items: center;
     border-radius: 6px;
     color: #ffffff;
     padding: 6px 20px;
@@ -453,7 +511,30 @@ header nav{
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+    display: flex;
+    align-items: center;
 }
+
+.section7-items{
+    display: flex;
+    align-items: center;
+    width: 220px;
+}
+.section7-items>div{
+    border: 1px solid #ffaa00;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
 .section7-div1-1,.section7-div1-2>p{
     margin-bottom: 40px;
 }
@@ -484,6 +565,14 @@ header nav{
     width: 400px;
     padding: 30px 40px;
     box-sizing: border-box;
+}
+.pricing-info-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pricing-info>p{
+    font-size: 10px;
 }
 .section8-div2-1 input{
     border: none;
@@ -556,15 +645,24 @@ header nav{
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
-.section10-div2 div{
-    background-color: #e9e9e9;
+.section10-div2>div{
+    background-color: #f8f8f8;
     border-radius: 6px;
+    box-sizing: border-box;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font: bold;
     padding: 20px 16px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+}
+.section10-icon{
+    color: #ececec;
+    font-size: 35px;
 }
 .section11-div{
     background-color: #ffaa00;
@@ -678,4 +776,36 @@ header nav{
     justify-content: space-between;
     width: 180px;
     box-sizing: border-box;
+}
+
+.fixed-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.fixed-icons>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.whatsapp{
+    background-color: #22c55e;
+}
+.chatbubbles{
+    background-color: #000;
+}
+.fixed-icons>div>ion-icon{
+    font-size: 20px;
+    color: #ffffff;
 }
