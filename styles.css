@@ -1,12 +1,22 @@
+/* @font-face { */
+    /* font-family: "TT Norms Pro"; */
+    /* src: url(https://assets.logistix.africa/fonts/TT-Norms-Pro/TT-Norms-Pro-Light.woff); */
+    /* src: url(https://assets.logistix.africa/fonts/TT-Norms-Pro/TT-Norms-Pro-Medium.woff); */
+    /* src: url(https://assets.logistix.africa/fonts/TT-Norms-Pro/TT-Norms-Pro-Regular.woff); */
+    /* src: url(https://assets.logistix.africa/fonts/TT-Norms-Pro/TT-Norms-Pro-Bold.woff); */
+/* } */
+
+
 html{
     font-family:TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
     /* overflow-x: hidden; */
 }
-body{
+#body{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    width: 100%;
+    align-items: center;
+    margin: 5px auto;
+    max-width: 960px;
 }
 a{
     cursor: pointer;
@@ -17,22 +27,30 @@ a:hover{
 }
 
 header nav{
+    /* border: 1px solid #000; */
+    color: #1d1d1f;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    /* font-family: TT Norms Pro; */
+    /* font-weight: medium; */
+    /* font-style: medium; */
+    margin: 10px auto;
+    margin-left: 45px;
+    width: 94%;
 }
 .header-div1>a{
     display: flex;
     align-content: center;
     align-items: center;
-    font-size: 15px;
+    color: #1d1d1f;
+    font-size: 16px;
     font-weight: 500;
 }
 .header-div1 img{
     margin-right: 5px;
-    width: 2em;
+    width: 2.2em;
 }
 .header-div1 div{
     display: inline;
@@ -43,8 +61,11 @@ header nav{
     align-items: center;
     text-transform: uppercase;
     width: 40%;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
+}
+.header-div2>a{
+    color: #1d1d1f;
 }
 .header-div2 button{
     background-color: #ffffff;
@@ -59,8 +80,10 @@ header nav{
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
-.header-div2 button :hover{
+.header-div2 button:hover{
     background-color: #ffaa00;
+    color: #ffffff;
+    cursor: pointer;
 }
 .curve img{
     /* height: 500px; */
@@ -71,10 +94,10 @@ header nav{
     text-align: center;
     margin: 0 auto;
     margin-top: 60px;
-    width: 94vw;
+    width: 90%;
 }
 .section1-img img{
-    width: 96%;
+    width: 90%;
 }
 .section1-div{
     color: #1d1d1f;
@@ -92,7 +115,7 @@ header nav{
     font-size: 40px;
     font-weight: 700;
 }
-.medium{
+.medium1{
     font-weight: 500;
 }
 .section1-div button{
@@ -121,7 +144,7 @@ header nav{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 .section2>div>h1{
@@ -143,7 +166,7 @@ header nav{
 }
 .section2-img-div>img{
     border-radius: 20px;
-    height: 98%;
+    /* height: 98%; */
     width: 98%;
     margin: auto;
     margin-top: 3px;
@@ -195,7 +218,7 @@ header nav{
 
 .section3-div{
     margin-top: 100px;
-    width: 100%;
+    width: 90%;
     color: #1d1d1f;
 }
 .section3-div1 h1{
@@ -341,7 +364,7 @@ header nav{
     margin: 0 auto;
     margin-top: 100px;
     height: 600px;
-    width: 100%;
+    width: 90%;
 }
 .section5-div>div{
     height: 95%;
@@ -350,7 +373,7 @@ header nav{
 .section5-div1>hr{
     border: none;
     border-bottom: 1px solid #f4f4f4;
-    height:0;color:inherit;border-top-width:1px
+    height:0;color:inherit;border-top-width:1px;
 }
 .section5-div1{
     color: #1d1d1f;
@@ -509,7 +532,7 @@ header nav{
     padding: 60px;
 }
 .text{
-    color: #ffffff;
+    color: #eaeaeae6;
 }
 .section6-div1-1,.section6-div1-2,.section6-div1-3{
     display: flex;
@@ -544,8 +567,7 @@ header nav{
     font-size: 20px;
 }
 .section6-div2{
-    /* margin: 0 auto;
-    margin-top: 100px; */
+    color: #eaeaea;
     width: 300px;
 }
 .section6-div2>h2{
@@ -584,14 +606,25 @@ header nav{
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 200px;
-    width: 1000px;
+    width: 90%;
+}
+.medium2{
+    color: #1d1d1f;
+    font-size: 30px;
+    font-weight: 500;
+}
+.large{
+    color: #777777;
+    font-size: 40px;
+    font-weight: 700;
+    width: 300px;
 }
 .section7-img-div{
     box-sizing: border-box;
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
-    width: 100%;
+    width: 90%;
 }
 .section7-img-div img{
     width: 70%;
@@ -646,7 +679,7 @@ header nav{
     display: flex;
     justify-content: space-around;
     color: #000;
-    width: 1000px;
+    width: 90%;
     margin-top: 40px;
 }
 .section8-div1{
@@ -670,7 +703,13 @@ header nav{
     padding: 30px 40px;
     box-sizing: border-box;
 }
+.section8-div2-1 h3{
+    color: #66666633;
+    font-size: 25px;
+    font-weight: 500;
+}
 .pricing-info-div{
+    color: #1d1d1f;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -693,6 +732,16 @@ header nav{
     display: flex;
     justify-content: space-between;
     margin: 40px 0 30px 0;
+}
+.section8-div3-1 label,.section8-div2-1 span{
+    color: #777777;
+}
+.section8-div2-1 span{
+
+}
+.section8-div3>div>div{
+    height: 30px;
+    margin: 10px 0;
 }
 .section9-div{
     margin: 0 auto;
@@ -721,7 +770,7 @@ header nav{
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
-    width: 1000px;
+    width: 90%;
 }
 .section10-div1{
     width: 40%;
@@ -809,7 +858,7 @@ header nav{
     justify-content: space-around;
     margin: 0 auto;
     margin-top: 50px;
-    width: 1000px;
+    width: 90%;
 }
 .footer-div1{
     display: flex;
@@ -829,7 +878,7 @@ header nav{
     width: 75%;
 }
 .footer-div-1s>hr{
-    max-width: 110%;
+    max-width: 98%;
     /* overflow: hidden; */
 }
 .footer-navs{
