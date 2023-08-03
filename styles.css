@@ -1,10 +1,10 @@
-/* @font-face { */
-    /* font-family: "TT Norms Pro"; */
-    /* src: url(https://assets.logistix.africa/fonts/TT-Norms-Pro/TT-Norms-Pro-Light.woff); */
-    /* src: url(https://assets.logistix.africa/fonts/TT-Norms-Pro/TT-Norms-Pro-Medium.woff); */
-    /* src: url(https://assets.logistix.africa/fonts/TT-Norms-Pro/TT-Norms-Pro-Regular.woff); */
-    /* src: url(https://assets.logistix.africa/fonts/TT-Norms-Pro/TT-Norms-Pro-Bold.woff); */
-/* } */
+@font-face {
+    font-family: "TT Norms Pro";
+    src: url("https://assets.logistix.africa/fonts/TT-Norms-Pro/TT-Norms-Pro-Light.woff") format("woff");
+    src: url("https://assets.logistix.africa/fonts/TT-Norms-Pro/TT-Norms-Pro-Medium.woff") format("woff");
+    src: url("https://assets.logistix.africa/fonts/TT-Norms-Pro/TT-Norms-Pro-Regular.woff") format("woff");
+    src: url("https://assets.logistix.africa/fonts/TT-Norms-Pro/TT-Norms-Pro-Bold.woff") format("woff");
+}
 
 
 html{
@@ -33,24 +33,26 @@ header nav{
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    /* font-family: TT Norms Pro; */
-    /* font-weight: medium; */
-    /* font-style: medium; */
-    margin: 10px auto;
-    margin-left: 45px;
-    width: 94%;
+    font-family: "TT Norms Pro";
+    font-style: medium;
+    font-weight: medium;
+    margin: 12px auto;
+    margin-left: 65px;
+    width: 90%;
 }
 .header-div1>a{
     display: flex;
     align-content: center;
     align-items: center;
     color: #1d1d1f;
+    font-family: "TT Norms Pro";
+    font-style: medium;
     font-size: 16px;
     font-weight: 500;
 }
 .header-div1 img{
     margin-right: 5px;
-    width: 2.2em;
+    width: 2.4em;
 }
 .header-div1 div{
     display: inline;
@@ -94,10 +96,10 @@ header nav{
     text-align: center;
     margin: 0 auto;
     margin-top: 60px;
-    width: 90%;
+    width: 98%;
 }
 .section1-img img{
-    width: 90%;
+    width: 94%;
 }
 .section1-div{
     color: #1d1d1f;
@@ -118,25 +120,31 @@ header nav{
 .medium1{
     font-weight: 500;
 }
-.section1-div button{
+.section1-button{
+    margin: 30px auto;
+    text-align: center;
+}
+.section1-button a{
     background-color: #ffaa00;
     border: none;
-    border-radius: 24px;
+    border-radius: 30px;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
-    padding: 16px 26px;
+    padding: 12px 20px;
     outline: none;
-    -webkit-border-radius: 24px;
-    -moz-border-radius: 24px;
-    -ms-border-radius: 24px;
-    -o-border-radius: 24px;
+    width: 100px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
-.section1-div button:hover{
+.section1-button a:hover{
     cursor: pointer;
 }
-.section1-div-p2 a{
-    color: green;
+.section1-div-h2{
+    color: #16a34a;
+    font-size: 20px;
     font-weight: 700;
 }
 .section2>div{
