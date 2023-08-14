@@ -3,11 +3,12 @@ const next = document.querySelector(".next");
 const prevNextSpan = document.querySelector(".prev-next-span");
 const quickTourImage = document.querySelector(".img1");
 const quickTourText = document.querySelector(".qtext1");
-const smallBall1 = document.querySelector("sb1");
-const smallBall2 = document.querySelector("sb2");
-const smallBall3 = document.querySelector("sb3");
-const smallBall4 = document.querySelector("sb4");
-const smallBall5 = document.querySelector("sb5");
+const smallBall1 = document.getElementById("sb1");
+const smallBall2 = document.getElementById("sb2");
+const smallBall3 = document.getElementById("sb3");
+const smallBall4 = document.getElementById("sb4");
+const smallBall5 = document.getElementById("sb5");
+const aPrev = document.getElementById("prev");
 
 const box1 = document.querySelector(".section3-div2-1");
 const box2 = document.querySelector(".section3-div2-2");
@@ -20,6 +21,19 @@ const bicycle = document.querySelector(".bicycle");
 const cart = document.querySelector(".cart");
 const code = document.querySelector(".code");
 const usecasesContainer = document.querySelector(".section4-div");
+
+
+
+if(prevNextSpan.textContent==="1 of 5"){
+    smallBall1.classList.add("flatball");
+    smallBall2.classList.remove("flatball");
+    smallBall3.classList.remove("flatball");
+    smallBall4.classList.remove("flatball");
+    smallBall5.classList.remove("flatball");
+    aPrev.classList.add("faint");
+}
+
+
 
 next.addEventListener("click", () => {
     event.preventDefault();
@@ -34,8 +48,12 @@ prev.addEventListener("click", () => {
     prevSpanContent(prevNextSpan.textContent);
     changeQuickTourImage();
     changeQuickTourText();
+    setSmallBallSize();
 })
 
+window.onload = ()=>{
+    business.innerHTML = `<ion-icon name="checkmark"></ion-icon>`;
+}
 
 box1.addEventListener("click", () => {
     business.innerHTML = `<ion-icon name="checkmark"></ion-icon>`;
@@ -348,14 +366,39 @@ const changeQuickTourText = () =>{
 const setSmallBallSize = () =>{
     if(prevNextSpan.textContent==="1 of 5"){
         smallBall1.classList.add("flatball");
+        smallBall2.classList.remove("flatball");
+        smallBall3.classList.remove("flatball");
+        smallBall4.classList.remove("flatball");
+        smallBall5.classList.remove("flatball");
+        aPrev.classList.add("faint");
     }else if(prevNextSpan.textContent==="2 of 5"){
         smallBall2.classList.add("flatball");
+        smallBall1.classList.remove("flatball");
+        smallBall3.classList.remove("flatball");
+        smallBall4.classList.remove("flatball");
+        smallBall5.classList.remove("flatball");
+        aPrev.classList.remove("faint");
     }else if(prevNextSpan.textContent==="3 of 5"){
         smallBall3.classList.add("flatball");
+        smallBall1.classList.remove("flatball");
+        smallBall2.classList.remove("flatball");
+        smallBall4.classList.remove("flatball");
+        smallBall5.classList.remove("flatball");
+        aPrev.classList.remove("faint");
     }else if(prevNextSpan.textContent==="4 of 5"){
         smallBall4.classList.add("flatball");
+        smallBall1.classList.remove("flatball");
+        smallBall2.classList.remove("flatball");
+        smallBall3.classList.remove("flatball");
+        smallBall5.classList.remove("flatball");
+        aPrev.classList.remove("faint");
     }else if(prevNextSpan.textContent==="5 of 5"){
         smallBall5.classList.add("flatball");
+        smallBall1.classList.remove("flatball");
+        smallBall2.classList.remove("flatball");
+        smallBall3.classList.remove("flatball");
+        smallBall4.classList.remove("flatball");
+        aPrev.classList.remove("faint");
     }
 }
 const prevSpanContent = (content) =>{
