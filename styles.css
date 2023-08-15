@@ -379,11 +379,11 @@ header nav{
     box-shadow:  0 20px 30px  rgba(202, 202, 202, 0.5);
     flex-direction: row;
     font-size: 14px;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: space-around;
+    padding: 40px;
     margin: 0 auto;
     margin-top: 40px;
-    height: 550px;
+    height: 600px;
     width: 90%;
     box-sizing: border-box;
     -webkit-border-radius: 4px;
@@ -391,28 +391,26 @@ header nav{
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
-.steps{
-    font-size: 25px;
-    line-height: 0.1em;
-}
 .section4-div1{
     margin-top: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 40%;
+    padding-right: 10px;
+    width: 47%;
 }
 .section4-div1-1{
     text-align: center;
 }
+.section4-div1-1>img{
+    width: 40%;
+}
 .section4-div1-2>h4{
     color: #777777;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.1em;
     margin: 5px;
 }
 .section4-div1-2>h3{
     color: #1d1d1f;
-    font-size: 25px;
+    font-size: 30px;
     margin: 5px;
 }
 .section4-div1-2{
@@ -421,39 +419,52 @@ header nav{
 }
 .section4-div1-2>p{
     color: #333333;
+    font-size: 16px;
 }
 .section4-div-1{
     margin: auto;
 }
 .section4-div2{
-    /* border: 1px solid black; */
-    height: 80%;
-    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
     padding: 30px 0;
-    width: 40%;
+    width: 47%;
+}
+.steps{
+    font-size: 30px;
+    line-height: 0.1em;
+    margin-bottom: 30px;
 }
 .section4-div2-flex{
-    /* border: 1px solid black; */
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
-    /* margin: 0 auto; */
+    height: 95%;
+    margin: 30px auto;
 
 }
 .num-divs{
     display: flex;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 .num{
     color: #66666633;
-    font-size: 40px;
-    line-height: 1px;
+    font-family: GT Super Display Bold;
+    font-size: 72px;
+    line-height: 0.2px;
+    height: 20px;
     margin-right: 10px;
-    margin-top: -25px;
+    margin-top: -55px;
 }
 .num-heading{
     color: #777777;
-    font-size: 20px;
+    font-size: 24px;
+}
+.num-text:nth-child(2){
+    font-size: 16px;
 }
 .num-text>div>a{
     color: #22c55e;
