@@ -29,34 +29,37 @@
         </header>
         <section>
             <div class="curve">
-                <img src="imgs/curve.svg" alt="">
-                <img src="imgs/curve.svg" alt="">
-                <img src="imgs/curve.svg" alt="">
-                <img src="imgs/curve.svg" alt="">
-                <img src="imgs/curve.svg" alt="">
-                <img src="imgs/curve.svg" alt="">
-                <img src="imgs/curve.svg" alt="">
-                <img src="imgs/curve.svg" alt="">
-                <img src="imgs/curve.svg" alt="">
-                <img src="imgs/curve.svg" alt="">
+                <img src="imgs/curve.svg" id="curve1" alt="">
+                <img src="imgs/curve.svg" id="curve2" alt="">
+                <img src="imgs/curve.svg" id="curve3" alt="">
+                <img src="imgs/curve.svg" id="curve4" alt="">
+                <img src="imgs/curve.svg" id="curve5" alt="">
+                <img src="imgs/curve.svg" id="curve6" alt="">
+                <img src="imgs/curve.svg" id="curve7" alt="">
+                <img src="imgs/curve.svg" id="curve8" alt="">
+                <img src="imgs/curve.svg" id="curve9" alt="">
+                <img src="imgs/curve.svg" id="curve10" alt="">
             </div>
         </section>
         <section name="section1">
-            <div class="section1-div">
-                <div>
-                    <h1> Your Delivery Business,</h1>
-                    <h1>On The Move.</h1>
-                    <p>We believe in the opportunities that come with being <span class="medium1">In Absolute Control of your Business.</span> Logistix gives you the ability to shape your business by maximizing control and minimizing losses.</p>
+            <div class="section1">
+                <div class="section1-div">
+                    <div>
+                        <h1> Your Delivery Business,</h1>
+                        <h1>On The Move.</h1>
+                        <p>We believe in the opportunities that come with being <span class="medium1">In Absolute Control of your Business.</span> Logistix gives you the ability to shape your business by maximizing control and minimizing losses.</p>
+                    </div>
+                    <div class="section1-button">
+                        <a>Get Started ↓</a>
+                    </div>
+                    <a href=""><h2 class="section1-div-h2">See how it works (demo) →</h2></a>
                 </div>
-                <div class="section1-button">
-                    <a>Get Started ↓</a>
+                <div class="section1-img">
+                    <img src="imgs/logistix-app-bordered.png" >
                 </div>
-                <a href=""><h2 class="section1-div-h2">See how it works (demo) →</h2></a>
-            </div>
-            <div class="section1-img">
-                <img src="imgs/logistix-app-bordered.png" >
             </div>
         </section>
+
         <div class="section2-div">
             <h1>A Quick Tour.</h1>
             <p>Let's show you a couple of things you can do with Logistix.</p>
@@ -100,6 +103,12 @@
                     </div>
                 </div>
             </section>
+        </div>
+        <div class="qt-slant">
+            
+        </div>
+        <div class="uc-slant">
+            
         </div>
         <section class="section3">
             <div class="section3-div">
@@ -231,31 +240,37 @@
                             <div class="section5-div2-1">
                                 <div class="step">STEP 1</div>
                                 <h3>Create your business</h3>
-                                <div class="learn-how">
-                                    <a href="http://"><span>Learn how</span><div class="play-circle-div"><ion-icon name="play-circle"></ion-icon></div></a>
+                                <div class="learn-how" id="lh1">
+                                    <a href=""><span>Learn how</span><div class="play-circle-div"><ion-icon name="play-circle"></ion-icon></div></a>
                                 </div>
                             </div>
-                            <div></div>
+                            <div class="step-ion">
+                                <ion-icon name="storefront-outline"></ion-icon>
+                            </div>
                         </div>
                         <div>
                             <div class="section5-div2-2">
                                 <div class="step">STEP 2</div>
                                 <h3> Activate your business</h3>
-                                <div class="learn-how">
-                                    <a href="http://"><span>Learn how</span><div class="play-circle-div"><ion-icon name="play-circle"></ion-icon></div></a>
+                                <div class="learn-how" id="lh2">
+                                    <a href=""><span>Learn how</span><div class="play-circle-div"><ion-icon name="play-circle"></ion-icon></div></a>
                                 </div>
                             </div>
-                            <div></div>
+                            <div class="step-ion">
+                                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                            </div>
                         </div>
                         <div>
                             <div class="section5-div2-3">
                                 <div class="step">STEP 3</div>
                                 <h3>Complete business setup</h3>
-                                <div class="learn-how">
-                                    <a href="http://"><span>Learn how</span><div class="play-circle-div"><ion-icon name="play-circle"></ion-icon></div></a>
+                                <div class="learn-how" id="lh3">
+                                    <a href=""><span>Learn how</span><div class="play-circle-div"><ion-icon name="play-circle"></ion-icon></div></a>
                                 </div>
                             </div>
-                            <div></div>
+                            <div class="step-ion">
+                                <ion-icon name="rocket-outline"></ion-icon>
+                            </div>
                         </div>
                         
                         
@@ -279,18 +294,20 @@
                         <input type="text" placeholder="Your Business Phone Number">
                     </div>
                     <div class="section5-div3-6">
-                        <input type="text" placeholder="Your Business Address">
+                        <textarea type="text" placeholder="Your Business Address"></textarea>
                     </div>
                     <div class="section5-div3-7">
     
                         <select name="" id="">
-                            <option value="">How did you hear about us? (Optional)</option>
-                            <option value="Social Media">Social Media</option>
-                            <option value="Search Engine (like Google, Bing, etc)">Search Engine (like Google, Bing, etc)</option>
-                            <option value="One of our Agents">One of our Agents</option>
-                            <option value="Referred by another business">Referred by another business</option>
-                            <option value="Other">Other</option>
-                        </select>                
+                            <optgroup>
+                                <option class="opt1" value="">How did you hear about us? (Optional)</option>
+                                <option value="Social Media">Social Media</option>
+                                <option value="Search Engine (like Google, Bing, etc)">Search Engine (like Google, Bing, etc)</option>
+                                <option value="One of our Agents">One of our Agents</option>
+                                <option value="Referred by another business">Referred by another business</option>
+                                <option value="Other">Other</option>
+                            </optgroup>
+                        </select>
                     </div>
                     <div class="section5-div3-8">
                         <a href="http://"><input type="button" value="Get Started"></a>
@@ -569,6 +586,21 @@
         </div>
     </div>
 
+
+    <div class="pl-slant"></div>
+
+    <div id="modal1">
+        <div id="close1">x</div>
+        <video src="" controls="controls"></video>
+    </div>
+    <div id="modal2">
+        <div id="close2">x</div>
+        <video src="" controls="controls"></video>
+    </div>
+    <div id="modal3">
+        <div id="close3">x</div>
+        <video src="" controls="controls"></video>
+    </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
