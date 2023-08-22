@@ -22,16 +22,20 @@ const cart = document.querySelector(".cart");
 const code = document.querySelector(".code");
 const usecasesContainer = document.querySelector(".section4-div");
 
-const modal1 = document.querySelector("#modal1");
+const modal1 = document.getElementById("modal1");
 const modal2 = document.querySelector("#modal2");
 const modal3 = document.querySelector("#modal3");
-const lh1 = document.querySelector("#lh1");
+const lh1 = document.getElementById("lh1");
 const lh2 = document.querySelector("#lh2");
 const lh3 = document.querySelector("#lh3");
 
 const closeBtn1 = document.querySelector("#close1");
 const closeBtn2 = document.querySelector("#close2");
 const closeBtn3 = document.querySelector("#close3");
+
+const modal1Content = document.querySelector("#modal1-content");
+const modal2Content = document.querySelector("#modal2-content");
+const modal3Content = document.querySelector("#modal3-content");
 
 if(prevNextSpan.textContent==="1 of 5"){
     smallBall1.classList.add("flatball");
@@ -438,30 +442,46 @@ const nextSpanContent  = (content)=>{
     }
 }
 
-lh1.addEventListener("click", ()=>{
-    modal1.classList.add("modal");
-    console.log("learn how1 clicked");
+lh1.addEventListener("click", (e)=>{
+    e.preventDefault();
+    modal1.style.display="flex";
 })
-lh2.addEventListener("click", ()=>{
-    modal2.classList.add("modal");
-    console.log("learn how2 clicked");
+lh2.addEventListener("click", (e)=>{
+    e.preventDefault();
+    modal2.style.display="flex";
 })
-lh3.addEventListener("click", ()=>{
-    modal3.classList.add("modal");
-    console.log("learn how3 clicked");
+lh3.addEventListener("click", (e)=>{
+    e.preventDefault();
+    modal3.style.display="flex";
 })
-closeBtn1.addEventListener("click", ()=>{
-    modal1.classList.remove("modal");
-    console.log("closed 1");
+modal1.addEventListener("click", (e)=>{
+    if(e.target==closeBtn1||e.target!==modal1Content){
+        modal1.style.display="none";
+    }
 })
-closeBtn2.addEventListener("click", ()=>{
-    modal2.classList.remove("modal");
-    console.log("closed 2");
+modal2.addEventListener("click", (e)=>{
+    if(e.target==closeBtn2||e.target!==modal2Content){
+        modal2.style.display="none";
+    }
 })
-closeBtn3.addEventListener("click", ()=>{
-    modal3.classList.remove("modal");
-    console.log("closed 3");
+modal3.addEventListener("click", (e)=>{
+    if(e.target==closeBtn3||e.target!==modal3Content){
+        modal3.style.display="none";
+    }
 })
+// closeBtn1.addEventListener("click", ()=>{
+//     modal1.style.display="none";
+//     console.log("closed 1");
+// })
+// closeBtn2.addEventListener("click", ()=>{
+//     modal2.classList.remove("modal");
+//     console.log("closed 2");
+// })
+// closeBtn3.addEventListener("click", ()=>{
+//     modal3.classList.remove("modal");
+//     console.log("closed 3");
+// })
+
 
 
 

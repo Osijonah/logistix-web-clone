@@ -17,6 +17,9 @@ html{
     margin: 5px auto;
     max-width: 960px;
 }
+/* #layout{
+    padding: 30px;
+} */
 a{
     color: inherit;
     cursor: pointer;
@@ -39,7 +42,7 @@ header nav{
     margin: 12px auto;
     margin-left: 65px;
     position: relative;
-    width: 90%;
+    width: 85%;
 }
 .header-div1>a{
     display: flex;
@@ -146,10 +149,10 @@ header nav{
     text-align: center;
     margin: 0 auto;
     margin-top: 60px;
-    width: 98%;
+    width: 95%;
 }
 .section1-img img{
-    width: 94%;
+    width: 85%;
 }
 .section1-div>div{
     color: #1d1d1f;
@@ -206,7 +209,7 @@ header nav{
     position: relative;
     margin: 0 auto;
     margin-bottom: 100px;
-    width: 90%;
+    width: 85%;
 }
 .qt-slant{
     position: absolute;
@@ -370,7 +373,7 @@ header nav{
 .section3-div{
     margin: 0 auto;
     margin-top: 100px;
-    width: 90%;
+    width: 85%;
     color: #1d1d1f;
 }
 .section3-div1 h1{
@@ -440,8 +443,10 @@ header nav{
 
 .soon{
     position: relative;
-    left: 180px;
-    font-size: small;
+    left: 160px;
+    color: #777777;
+    font-size: 12px;
+    font-weight: 400;
 }
 .section4-div{
     background-color: #ffffff;
@@ -455,7 +460,7 @@ header nav{
     margin: 0 auto;
     margin-top: 40px;
     height: 700px;
-    width: 90%;
+    width: 85%;
     box-sizing: border-box;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -563,8 +568,8 @@ header nav{
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
-    height: 700px;
-    width: 90%;
+    height: 750px;
+    width: 85%;
 }
 .section5-div>div{
     height: 95%;
@@ -586,6 +591,10 @@ header nav{
     margin-bottom: 20px;
 }
 .section5-div1>p{
+    line-height: 25px;
+    font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 100;
     margin-top: 25px;
 }
 .section5-div1>p>a{
@@ -605,49 +614,42 @@ header nav{
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-between;
-    height: 65%;
+    height: 70%;
     padding: 20px 40px;
 }
 .section5-div2 h3{
     font-family: GT Super Display Bold;
     font-size: 24px;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .section5-div2>div{
     display: flex;
     justify-content: space-between;
     background-color: #f9fafb;
     border-radius: 4px;
-    -webkit-border-radius: 10px;
+    -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     box-sizing: border-box;
-    padding: 20px;
-    height: 120px;
+    padding: 24px;
+    height: 140px;
 }
 .learn-how{
     display: flex;
-    align-items: center;
-    align-content: center;
     height: 20px;
     color: #1d1d1f;
 }
 .learn-how>a{
     color: #3b82f6;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 90px;
+    width: 100px;
 }
 .learn-how>a>span{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-}
-.play-circle-div{
-    display: inline-block;
-    margin-top: 10px;
 }
 .play-circle-div>ion-icon{
     font-size: 20px;
@@ -701,7 +703,7 @@ header nav{
     color: rgba(168, 168, 168, 0.39);
 }
 #subdomain-input{
-    width: 350px;
+    width: 340px;
 }
 .section5-div3-8 input{
     background-color: #22c55e;
@@ -735,26 +737,16 @@ header nav{
 }
 .section5-div3-7>select{
     border: none;
-    width: 420px;
-}
-.section5-div3-7>select>optgroup{
-    width: 420px;
-}
-.section5-div3-7>select>optgroup>option{
-    width: 420px;
-}
-.opt1{
+    background-color: #ffffff;
+    color: #1d1d1f;
     font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
     font-size: 16px;
+    width: 415px;
 }
-.section5-div3-7>select>optgroup{
-    font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
-    font-size: 16px;
+select option{
+   width: 400px;
 }
-.section5-div3-7>select:focus{
-    border: none;
-    width: 270px;
-}
+
 .section5-div3 hr{
     border: none;
     border-top:1px solid #e2e2e2;
@@ -774,6 +766,7 @@ header nav{
     border-radius: 70px;
     margin: auto;
     margin-top: 100px;
+    margin-bottom: 300px;
     height: 420px;
     width: 900px;
     -webkit-border-radius: 70px;
@@ -789,7 +782,8 @@ header nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 90px;
 }
 .section6-div1{
     display: flex;
@@ -813,123 +807,203 @@ header nav{
     -o-border-radius: 60px;
 }
 .icon ion-icon{
-    color: rgba(131, 131, 131, 0.39);
-    font-size: 20px;
+    color: rgba(211, 211, 211, 0.39);
+    font-size: 30px;
 }
 .section6-div2{
-    color: #eaeaea;
-    width: 300px;
+    margin-bottom: 30px;
+    width: 600px;
 }
 .section6-div2>h2{
     color: #ffaa00;
+    font-family: GT Super Display Bold;
+    font-size: 48px;
+    margin-bottom: 0;
     text-align: center;
 }
 .section6-div2>p{
-    color: #ffffff;
+    color: #eaeaea;
+    font-family: TT Norms Pro Light,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
+    font-size: 20px;
+    /* font-weight: 100; */
+    margin-top: 0;
     text-align: center;
 }
 .section6-div3{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 320px;
+    width: 380px;
 }
 .section6-btn{
     background-color: #ffffff;
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
-    padding: 6px 20px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
+    padding: 12px 24px;
+    /* width: 180px; */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .section6-btn>div>ion-icon{
-    font-size: 20px;
+    font-size: 30px;
+}
+.sc6-btn-text{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+.sc6-btn-text1{
+    font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1d1d1f;
+    /* font-weight: 100; */
+}
+.sc6-btn-text2{
+    font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
+    font-size: 16px;
+    color: #1d1d1f;
+    font-weight: 500;
+}
+
+.pl-slant{
+    position: absolute;
+    background-color: #feebc833;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    height: 1000px;
+    width: 100%;
+    left: 0;
+    top: 5150px;
+    z-index: -1;
 }
 .section7-div1{
     display: flex;
-    flex-flow: row;
     justify-content: center;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 200px;
-    width: 90%;
+    width: 85%;
 }
-.medium2{
-    color: #1d1d1f;
-    font-size: 30px;
-    font-weight: 500;
+.section7-div1>div{
+    width: 50%;
 }
-.large{
-    color: #777777;
-    font-size: 40px;
-    font-weight: 700;
-    width: 300px;
-}
+
 .section7-img-div{
     box-sizing: border-box;
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
-    width: 90%;
 }
 .section7-img-div img{
-    width: 70%;
+    width: 90%;
 }
 .section7-div1-3{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    width: 310px;
+    width: 370px;
 }
+.medium2{
+    color: #1d1d1f;
+    font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.large{
+    color: #777777;
+    font-family: GT Super Display Bold;
+    font-size: 48px;
+    font-weight: 700;
+}
+.section7-div1-1{
+    color: #1d1d1f;
+    font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
+    font-size: 20px;
+    line-height: 25px;
+}
+
 .section7-btn{
     background-color: #000;
     border: none;
-    align-items: center;
-    border-radius: 6px;
-    color: #ffffff;
-    padding: 6px 20px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
     display: flex;
     align-items: center;
+    color: #ffffff;
+    align-items: center;
+    border-radius: 10px;
+    align-items: center;
+    padding: 12px 24px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
-
+.sc7-btn-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+.sc7-btn-txt1{
+    font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
+    font-size: 12px;
+    font-weight: 500;
+}
+.sc7-btn-txt2{
+    font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sc7-btn-icon{
+    font-size: 30px;
+}
 .section7-items{
     display: flex;
     align-items: center;
-    width: 220px;
+    width: 250px;
 }
 .section7-items>div{
-    border: 1px solid #ffaa00;
-    border-radius: 40px;
+    border: 1px solid #ffaa0033;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     margin-right: 10px;
     align-items: center;
-    height: 40px;
-    width: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
+    height: 50px;
+    width: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 .section7-items ion-icon{
     color: #ffaa00;
+    font-size: 25px;
+}
+.section7-div1-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
 }
 .section7-div1-1,.section7-div1-2>p{
     margin-bottom: 40px;
 }
+.section7-div1-2>p{
+    color: #1d1d1f;
+    font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
+    font-size: 16px;
+    line-height: 25px;
+}
+
 .section8-div{
     display: flex;
     justify-content: space-around;
     color: #000;
-    width: 90%;
+    width: 85%;
     margin-top: 40px;
 }
 .section8-div1{
@@ -1020,7 +1094,7 @@ header nav{
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
-    width: 90%;
+    width: 85%;
 }
 .section10-div1{
     width: 40%;
@@ -1215,16 +1289,47 @@ header nav{
 
 #modal1,#modal2,#modal3{
     display: none;
-    background-color: #00000077;
+    background-color: #000000bb;
+    position: fixed;
+    justify-content: center;
+    align-content: center;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: 3;
+}
+.modal-content{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 90%;
+}
+.video-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 96%;
+    margin-bottom: 10px;
+}
+.vid-htext{
+    color: #ffffff;
+    font-family: GT Super Display Bold, TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
+    font-size: 30px;
+}
+.vid-close{
+    color: #ffffff;
+    font-family: TT Norms Pro Light,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
+    font-size: 30px;
+    font-weight: 100;
+}
+video{
+    width: 100%;
+    height: 100%;
 }
 .modal{
     display: flex;
     background-color: #00000077;
+    position: absolute;
     left: 0;
     top: 0;
     height: 100%;

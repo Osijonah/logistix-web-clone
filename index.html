@@ -282,7 +282,7 @@
                         <input type="text" placeholder="Your Business Name">
                     </div>
                     <div class="section5-div3-2">
-                        <input id="subdomain-input" type="text" placeholder="Your Business Subdomain">.logistix.africa
+                        <input id="subdomain-input" type="text" placeholder="Your Business Subdomain"> &nbsp; .logistix.africa
                     </div>
                     <div class="section5-div3-3">
                         <input type="text" placeholder=" Your RC Number (Optional)">
@@ -298,15 +298,13 @@
                     </div>
                     <div class="section5-div3-7">
     
-                        <select name="" id="">
-                            <optgroup>
+                        <select name="" id="" class="select">
                                 <option class="opt1" value="">How did you hear about us? (Optional)</option>
                                 <option value="Social Media">Social Media</option>
                                 <option value="Search Engine (like Google, Bing, etc)">Search Engine (like Google, Bing, etc)</option>
                                 <option value="One of our Agents">One of our Agents</option>
                                 <option value="Referred by another business">Referred by another business</option>
                                 <option value="Other">Other</option>
-                            </optgroup>
                         </select>
                     </div>
                     <div class="section5-div3-8">
@@ -344,18 +342,18 @@
                         <div>
                             <ion-icon name="logo-google-playstore"></ion-icon>
                         </div>
-                        <div class="">
-                            <div>Get it on</div>
-                            <div>Google Play</div>
+                        <div class="sc6-btn-text">
+                            <div class="sc6-btn-text1">Get it on</div>
+                            <div class="sc6-btn-text2">Google Play</div>
                         </div>
                     </button>
                     <button class="section6-btn2 section6-btn">
                         <div>
                             <ion-icon name="logo-apple"></ion-icon>
                         </div>
-                        <div>
-                            <div>Coming soon to the</div>
-                            <div>App Store</div>
+                        <div class="sc6-btn-text">
+                            <div class="sc6-btn-text1">Coming soon to the</div>
+                            <div class="sc6-btn-text2">App Store</div>
                         </div>
                     </button>
                 </div>
@@ -399,21 +397,21 @@
                     </div>
                     <div class="section7-div1-3">
                         <button class="section7-btn1 section7-btn">
-                            <div>
+                            <div class="sc7-btn-icon">
                                 <ion-icon name="logo-google-playstore"></ion-icon>
                             </div>
-                            <div class="">
-                                <div>Get it on</div>
-                                <div>Google Play</div>
+                            <div class="sc7-btn-txt">
+                                <div class="sc7-btn-txt1">Get it on</div>
+                                <div class="sc7-btn-txt2">Google Play</div>
                             </div>
                         </button>
                         <button class="section7-btn2 section7-btn">
-                            <div>
+                            <div class="sc7-btn-icon">
                                 <ion-icon name="logo-apple"></ion-icon>
                             </div>
-                            <div>
-                                <div>Coming soon to the</div>
-                                <div>App Store</div>
+                            <div class="sc7-btn-txt">
+                                <div class="sc7-btn-txt1">Coming soon to the</div>
+                                <div class="sc7-btn-txt2">App Store</div>
                             </div>
                         </button>
                     </div>
@@ -421,6 +419,7 @@
                 
             </div>
         </section>
+        <div class="pl-slant"></div>
         <section class="section8">
             <div class="section8-div">
                 <div class="section8-div1">
@@ -587,19 +586,36 @@
     </div>
 
 
-    <div class="pl-slant"></div>
+   
 
     <div id="modal1">
-        <div id="close1">x</div>
-        <video src="" controls="controls"></video>
+        <div class="modal-content" id="modal1-content">
+            <div class="video-header">
+                <div class="vid-htext">How to create your business</div>
+                <div class="vid-close" id="close1">x</div>
+            </div>
+            <video src="https://res.cloudinary.com/echwood/video/upload/v1652312625/Logistix/videos/product-education/create-business.mp4" controls="controls" ></video>
+        </div>
     </div>
     <div id="modal2">
-        <div id="close2">x</div>
-        <video src="" controls="controls"></video>
+        <div class="modal-content" id="modal2-content">
+            <div class="video-header">
+                <div class="vid-htext">How to activate your business</div>
+                <div class="vid-close" id="close2">x</div>
+            </div>
+            <video src="https://res.cloudinary.com/echwood/video/upload/v1652312625/Logistix/videos/product-education/activate-business.mp4" controls="controls" ></video>
+        </div>
+        
     </div>
     <div id="modal3">
-        <div id="close3">x</div>
-        <video src="" controls="controls"></video>
+        <div class="modal-content" id="modal3-content">
+            <div class="video-header">
+                <div class="vid-htext">How to setup your business</div>
+                <div class="vid-close" id="close3">x</div>
+            </div>
+            <video src="https://res.cloudinary.com/echwood/video/upload/v1652312625/Logistix/videos/product-education/setup-business.mp4" controls="controls" ></video>
+        </div>
+        
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
