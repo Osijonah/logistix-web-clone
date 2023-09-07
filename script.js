@@ -105,6 +105,11 @@ const articleA1 = document.querySelector("#article-a1");
 const articleA2 = document.querySelector("#article-a2");
 const articleA3 = document.querySelector("#article-a3");
 const articleA4 = document.querySelector("#article-a4");
+
+const revenue = document.querySelector("#revenue");
+const income = document.querySelector("#income");
+const price = document.querySelector("#price");
+
 // console.log(articleBtn);
 
 if(prevNextSpan.textContent==="1 of 5"){
@@ -134,6 +139,7 @@ prev.addEventListener("click", () => {
 
 window.onload = ()=>{
     business.innerHTML = `<ion-icon name="checkmark"></ion-icon>`;
+    box1.classList.add("usecase-select");
 }
 
 box1.addEventListener("click", () => {
@@ -141,6 +147,11 @@ box1.addEventListener("click", () => {
     bicycle.innerHTML = `<ion-icon name="bicycle"></ion-icon>`;
     cart.innerHTML = `<ion-icon name="cart-outline"></ion-icon>`;
     code.innerHTML = `<ion-icon name="code-slash"></ion-icon>`;
+
+    box1.classList.add("usecase-select");
+    box2.classList.remove("usecase-select");
+    box3.classList.remove("usecase-select");
+    box4.classList.remove("usecase-select");
 
     usecasesContainer.innerHTML = `<div class="section4-div1">
     <div class="section4-div1-1">
@@ -198,6 +209,11 @@ box2.addEventListener("click", () => {
     bicycle.innerHTML = `<ion-icon name="checkmark"></ion-icon>`;
     cart.innerHTML = `<ion-icon name="cart-outline"></ion-icon>`;
     code.innerHTML = `<ion-icon name="code-slash"></ion-icon>`;
+
+    box1.classList.remove("usecase-select");
+    box2.classList.add("usecase-select");
+    box3.classList.remove("usecase-select");
+    box4.classList.remove("usecase-select");
 
     usecasesContainer.innerHTML = `<div class="section4-div1">
     <div class="section4-div1-1">
@@ -266,6 +282,11 @@ box3.addEventListener("click", () => {
     cart.innerHTML = `<ion-icon name="checkmark"></ion-icon>`;
     code.innerHTML = `<ion-icon name="code-slash"></ion-icon>`;
 
+    box1.classList.remove("usecase-select");
+    box2.classList.remove("usecase-select");
+    box3.classList.add("usecase-select");
+    box4.classList.remove("usecase-select");
+
     usecasesContainer.innerHTML = `<div class="section4-div1">
     <div class="section4-div1-1">
         <img src="imgs/retail.png" width="150" alt="" srcset="">
@@ -331,6 +352,11 @@ box4.addEventListener("click", () => {
     bicycle.innerHTML = `<ion-icon name="bicycle"></ion-icon>`;
     cart.innerHTML = `<ion-icon name="cart-outline"></ion-icon>`;
     code.innerHTML = `<ion-icon name="checkmark"></ion-icon>`;
+
+    box1.classList.remove("usecase-select");
+    box2.classList.remove("usecase-select");
+    box3.classList.remove("usecase-select");
+    box4.classList.add("usecase-select");
 
     usecasesContainer.innerHTML = `<div class="section4-div1">
     <div class="section4-div1-1">
@@ -614,6 +640,27 @@ const vidPause3 = () => {
 })
 
 {/* <ion-icon name="remove"></ion-icon> */}
+
+
+revenue.addEventListener("input", (e)=>{
+    e.preventDefault();
+    // let revenueNo = revenue.value.replace(/^₦/, '');
+    let revenueValue = parseInt(revenue.value);
+    let incomeValue = revenueValue - revenueValue/10;
+    let priceValue = revenueValue/10;
+    // console.log(`e target value: ` + e.target.value);
+
+    // console.log();
+
+    income.textContent = "₦" + incomeValue.toString();
+    price.textContent = "₦" + priceValue.toString();
+
+    if(revenue.value == "" ){
+        income.textContent = "₦0";
+        price.textContent = "₦0"; 
+    }
+})
+
 
 hd1.style.display = "none";
 hd2.style.display = "none";
