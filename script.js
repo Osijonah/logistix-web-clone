@@ -12,17 +12,17 @@ const smallBall4 = document.getElementById("sb4");
 const smallBall5 = document.getElementById("sb5");
 const aPrev = document.getElementById("prev");
 
-const box1 = document.querySelector(".section3-div2-1");
-const box2 = document.querySelector(".section3-div2-2");
-const box3 = document.querySelector(".section3-div2-3");
-const box4 = document.querySelector(".section3-div2-4");
+const box1 = document.querySelector(".usecases-tiles-div2-1");
+const box2 = document.querySelector(".usecases-tiles-div2-2");
+const box3 = document.querySelector(".usecases-tiles-div2-3");
+const box4 = document.querySelector(".usecases-tiles-div2-4");
 
 
 const business = document.querySelector(".business");
 const bicycle = document.querySelector(".bicycle");
 const cart = document.querySelector(".cart");
 const code = document.querySelector(".code");
-const usecasesContainer = document.querySelector(".section4-div");
+const usecasesContainer = document.querySelector(".usecases-content-div");
 
 const sd1 = document.querySelector("#sd1");
 const sd2 = document.querySelector("#sd2");
@@ -153,11 +153,11 @@ box1.addEventListener("click", () => {
     box3.classList.remove("usecase-select");
     box4.classList.remove("usecase-select");
 
-    usecasesContainer.innerHTML = `<div class="section4-div1">
-    <div class="section4-div1-1">
+    usecasesContainer.innerHTML = `<div class="usecases-content-div1">
+    <div class="usecases-content-div1-1">
         <img src="imgs/delivery-business.png" width="150" alt="" srcset="">
     </div>
-    <div class="section4-div1-2">
+    <div class="usecases-content-div1-2">
         <h4>GETTING STARTED AS</h4>
         <h3>A Delivery Business</h3>
         <p>
@@ -165,12 +165,12 @@ box1.addEventListener("click", () => {
         </p>
     </div>
 </div>
-<div class="section4-div2">
+<div class="usecases-content-div2">
     <div class="steps">
         Takes Just 3 Steps 😊
     </div>
-    <div class="section4-div2-flex">
-        <div class="section4-div2-1 num-divs">
+    <div class="usecases-content-div2-flex">
+        <div class="usecases-content-div2-1 num-divs">
         
             <div class="num">
                 <h1>01</h1>
@@ -181,7 +181,7 @@ box1.addEventListener("click", () => {
             </div>
             
         </div>
-        <div class="section4-div2-2 num-divs"> 
+        <div class="usecases-content-div2-2 num-divs"> 
             <div class="num">
                 <h1>02</h1>
             </div>
@@ -191,7 +191,7 @@ box1.addEventListener("click", () => {
             </div>
             
         </div>
-        <div class="section4-div2-3 num-divs">                    
+        <div class="usecases-content-div2-3 num-divs">                    
             <div class="num">
                 <h1>03</h1>
             </div>
@@ -215,11 +215,11 @@ box2.addEventListener("click", () => {
     box3.classList.remove("usecase-select");
     box4.classList.remove("usecase-select");
 
-    usecasesContainer.innerHTML = `<div class="section4-div1">
-    <div class="section4-div1-1">
+    usecasesContainer.innerHTML = `<div class="usecases-content-div1">
+    <div class="usecases-content-div1-1">
         <img src="imgs/dispatcher.png" width="150" alt="" srcset="">
     </div>
-    <div class="section4-div1-2">
+    <div class="usecases-content-div1-2">
         <h4>GETTING STARTED AS</h4>
         <h3>A One-Man Dispatcher</h3>
         <p>
@@ -231,12 +231,12 @@ box2.addEventListener("click", () => {
         </p>
     </div>
 </div>
-<div class="section4-div2">
+<div class="usecases-content-div2">
     <div class="steps">
         Takes Just 3 Steps 😊
     </div>
-<div class="section4-div2-flex">
-<div class="section4-div2-1 num-divs">
+<div class="usecases-content-div2-flex">
+<div class="usecases-content-div2-1 num-divs">
 
 <div class="num">
 <h1>01</h1>
@@ -249,7 +249,7 @@ manage your business on Logistix.</div>
 </div>
 
 </div>
-<div class="section4-div2-2 num-divs"> 
+<div class="usecases-content-div2-2 num-divs"> 
 <div class="num">
 <h1>02</h1>
 </div>
@@ -261,7 +261,7 @@ manage your business on Logistix.</div>
 </div>
 
 </div>
-<div class="section4-div2-3 num-divs">                    
+<div class="usecases-content-div2-3 num-divs">                    
 <div class="num">
 <h1>03</h1>
 </div>
@@ -287,11 +287,11 @@ box3.addEventListener("click", () => {
     box3.classList.add("usecase-select");
     box4.classList.remove("usecase-select");
 
-    usecasesContainer.innerHTML = `<div class="section4-div1">
-    <div class="section4-div1-1">
+    usecasesContainer.innerHTML = `<div class="usecases-content-div1">
+    <div class="usecases-content-div1-1">
         <img src="imgs/retail.png" width="150" alt="" srcset="">
     </div>
-    <div class="section4-div1-2">
+    <div class="usecases-content-div1-2">
         <h4>GETTING STARTED AS</h4>
         <h3>A Retail Business</h3>
         <p>
@@ -302,12 +302,12 @@ box3.addEventListener("click", () => {
         </p>
     </div>
 </div>
-<div class="section4-div2">
+<div class="usecases-content-div2">
     <div class="steps">
         Takes Just 3 Steps 😊
     </div>
-<div class="section4-div2-flex">
-<div class="section4-div2-1 num-divs">
+<div class="usecases-content-div2-flex">
+<div class="usecases-content-div2-1 num-divs">
 
 <div class="num">
 <h1>01</h1>
@@ -320,7 +320,7 @@ manage your business on Logistix.</div>
 </div>
 
 </div>
-<div class="section4-div2-2 num-divs"> 
+<div class="usecases-content-div2-2 num-divs"> 
 <div class="num">
 <h1>02</h1>
 </div>
@@ -332,7 +332,7 @@ manage your business on Logistix.</div>
 </div>
 
 </div>
-<div class="section4-div2-3 num-divs">                    
+<div class="usecases-content-div2-3 num-divs">                    
 <div class="num">
 <h1>03</h1>
 </div>
@@ -358,11 +358,11 @@ box4.addEventListener("click", () => {
     box3.classList.remove("usecase-select");
     box4.classList.add("usecase-select");
 
-    usecasesContainer.innerHTML = `<div class="section4-div1">
-    <div class="section4-div1-1">
+    usecasesContainer.innerHTML = `<div class="usecases-content-div1">
+    <div class="usecases-content-div1-1">
         <img src="imgs/developer.png" width="150" alt="" srcset="">
     </div>
-    <div class="section4-div1-2">
+    <div class="usecases-content-div1-2">
         <h4>GETTING STARTED AS</h4>
         <h3>A Developer</h3>
         <p>
@@ -374,12 +374,12 @@ box4.addEventListener("click", () => {
         </p>
     </div>
 </div>
-<div class="section4-div2">
+<div class="usecases-content-div2">
     <div class="steps">
         Takes Just 3 Steps 😊
     </div>
-<div class="section4-div2-flex">
-<div class="section4-div2-1 num-divs">
+<div class="usecases-content-div2-flex">
+<div class="usecases-content-div2-1 num-divs">
 
 <div class="num">
 <h1>01</h1>
@@ -392,7 +392,7 @@ your account on Logistix.</div>
 </div>
 
 </div>
-<div class="section4-div2-2 num-divs"> 
+<div class="usecases-content-div2-2 num-divs"> 
 <div class="num">
 <h1>02</h1>
 </div>
@@ -404,7 +404,7 @@ your account on Logistix.</div>
 </div>
 
 </div>
-<div class="section4-div2-3 num-divs">                    
+<div class="usecases-content-div2-3 num-divs">                    
 <div class="num">
 <h1>03</h1>
 </div>
