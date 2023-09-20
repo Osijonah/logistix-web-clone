@@ -10,17 +10,16 @@
 html{
     font-family:TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
 }
-/* #body{
-    display: flex;
-    font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
-    flex-direction: column;
-    align-items: center;
-    margin: 5px auto;
-    max-width: 960px;
-} */
+body{
+    border: 1px solid #000;
+    position: relative;
+}
 /* #layout{
     display: none;
 } */
+*{
+    margin: 0 auto;
+}
 a{
     color: inherit;
     cursor: pointer;
@@ -141,7 +140,7 @@ header nav{
     color: #1d1d1f;
     height: 450px;
     margin: 10px auto;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     position: relative;
     text-align: center;
 }
@@ -211,7 +210,7 @@ header nav{
     margin-bottom: 100px;
     width: 85%;
 }
-.qt-slant{
+.quick-tour-slant{
     position: absolute;
     background-color: #feebc833;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
@@ -222,7 +221,7 @@ header nav{
     top: 1600px;
     z-index: -1;
 }
-.uc-slant{
+.usecases-slant{
     position: absolute;
     background-color: #feebc833;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
@@ -768,7 +767,7 @@ select option{
     margin-bottom: 0;
     width: 300px;
 }
-.section6-div{
+.download-container{
     background-image: url(imgs/splash.png);
     background-color: #1c1c1c;
     display: flex;
@@ -789,24 +788,24 @@ select option{
     -o-border-radius: 70px;
     padding: 60px;
 }
-.text{
+.download-icon-txt{
     color: #eaeaeae6;
 }
-.section6-div1-1,.section6-div1-2,.section6-div1-3{
+.download-icons-child1,.download-icons-child2,.download-icons-child3{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     height: 90px;
 }
-.section6-div1{
+.download-icons{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 0 auto;
     width: 85%;
 }
-.icon{
+.download-icon{
     border: 1px solid rgba(131, 131, 131, 0.39);
     background-color: #66666633;
     display: flex;
@@ -820,36 +819,35 @@ select option{
     -ms-border-radius: 60px;
     -o-border-radius: 60px;
 }
-.icon ion-icon{
+.download-icon ion-icon{
     color: rgba(211, 211, 211, 0.39);
     font-size: 30px;
 }
-.section6-div2{
+.download-txts{
     margin-bottom: 30px;
     width: 600px;
 }
-.section6-div2>h2{
+.download-txts>h2{
     color: #ffaa00;
     font-family: GT Super Display Bold;
     font-size: 48px;
     margin-bottom: 0;
     text-align: center;
 }
-.section6-div2>p{
+.download-txts>p{
     color: #eaeaea;
     font-family: TT Norms Pro Light,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
     font-size: 20px;
-    /* font-weight: 100; */
     margin-top: 0;
     text-align: center;
 }
-.section6-div3{
+.download-btns{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 380px;
 }
-.section6-btn{
+.download-btn{
     background-color: #ffffff;
     border: none;
     border-radius: 10px;
@@ -861,33 +859,39 @@ select option{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.section6-btn:hover{
+.download-btn:hover{
     cursor: pointer;
 }
-.section6-btn>div>ion-icon{
+.download-btn>div>ion-icon{
     font-size: 30px;
 }
-.sc6-btn-text{
+.download-btn-txt{
     display: flex;
     flex-direction: column;
-    align-items: self-start;
+    align-content: flex-start;
 }
-.sc6-btn-text1{
+.download-btn-txt1{
+    align-self: flex-start;
     font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
     font-size: 12px;
     font-weight: 500;
     color: #1d1d1f;
+    text-align: left;
+    width: 100%;
 }
-.sc6-btn-text2{
+.download-btn-txt2{
+    align-self: flex-start;
     font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
     font-size: 16px;
     color: #1d1d1f;
     font-weight: 500;
+    text-align: left;
+    width: 100%;
 }
-.sc6-btn-icon{
+.download-btn-icon{
     margin-right: 10px;
 }
-.pl-slant{
+.pricing-slant{
     position: absolute;
     background-color: #feebc833;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
@@ -898,54 +902,56 @@ select option{
     top: 5150px;
     z-index: -1;
 }
-.section7-div1{
+.dispatchers-container{
     display: flex;
     justify-content: center;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 200px;
-    width: 85%;
+    width: 90%;
 }
-.section7-div1>div{
+.dispatchers-container>div{
     width: 50%;
 }
 
-.section7-img-div{
+.dispatchers-img-div{
     box-sizing: border-box;
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
 }
-.section7-img-div img{
+.dispatchers-img-div img{
     width: 90%;
 }
-.section7-div1-3{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    width: 390px;
-}
-.medium2{
+.something-light{
     color: #1d1d1f;
     font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 20px;
 }
-.large{
+.just-for-dispatchers{
     color: #777777;
     font-family: GT Super Display Bold;
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: 10px;
 }
-.section7-div1-1{
+.dispatchers-txt{
     color: #1d1d1f;
     font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
     font-size: 20px;
     line-height: 25px;
+    width: 100%;
+}
+.dispatchers-btns-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 390px;
 }
 
-.section7-btn{
+.dispatchers-btn{
     background-color: #000;
     border: none;
     display: flex;
@@ -960,34 +966,34 @@ select option{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.section7-btn:hover{
+.dispatchers-btn:hover{
     cursor: pointer;
 }
-.sc7-btn-txt{
+.dispatchers-btn-txt{
     display: flex;
     flex-direction: column;
     align-items: self-start;
 }
-.sc7-btn-txt1{
+.dispatchers-btn-txt1{
     font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
     font-size: 12px;
     font-weight: 500;
 }
-.sc7-btn-txt2{
+.dispatchers-btn-txt2{
     font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
     font-size: 16px;
     font-weight: 500;
 }
-.sc7-btn-icon{
+.dispatchers-btn-icon{
     font-size: 30px;
     margin-right: 10px;
 }
-.section7-items{
+.dispatchers-list-item{
     display: flex;
     align-items: center;
     width: 250px;
 }
-.section7-items>div{
+.dispatchers-list-item>div{
     border: 1px solid #ffaa0033;
     border-radius: 50px;
     display: flex;
@@ -1001,27 +1007,29 @@ select option{
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
 }
-.section7-items ion-icon{
+.dispatchers-list-item ion-icon{
     color: #ffaa00;
     font-size: 25px;
 }
-.section7-div1-2{
+.dispatchers-list{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 350px;
 }
-.section7-div1-1,.section7-div1-2>p{
+.dispatchers-txt{
     margin-bottom: 40px;
 }
-.section7-div1-2>p{
+.dispatchers-list-item>p{
     color: #1d1d1f;
     font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
     font-size: 16px;
     line-height: 25px;
+    text-align: left;
+    width: 70%;
 }
 
-.section8-div{
+.pricing-container{
     display: flex;
     justify-content: space-between;
     color: #000;
@@ -1030,10 +1038,10 @@ select option{
     margin-bottom: 200px;
     margin-top: 40px;
 }
-.section8-div1{
+.pricing-description{
     width: 45%;
 }
-.section8-div1-img{
+.pricing-img{
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -1041,33 +1049,33 @@ select option{
     height: 200px;
     width: 45%;
 }
-.section8-div1-img>img{
+.pricing-img>img{
     text-align: center;
     width: 100%;
 }
-.section8-div1-txt h1{
+.pricing-description-txt h1{
     font-family: GT Super Display Bold;
     font-size: 54px;
 }
-.sc8-div1-txt-h1{
+.and-logistix-is{
     color: #1d1d1f;
     margin-bottom: 0;
     margin-top: 0;
 }
-.section8-div1 p{
+.pricing-description p{
     color: #1d1d1f;
     font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
     font-size: 20px;
 }
-.section8-div1 h1,.section8-div1 p{
+.pricing-description h1,.pricing-description p{
     text-align: center;
 }
-.colored-txt{
+.almost-free{
     color: #ffaa00;
     margin-bottom: 0;
     margin-top: 0;
 }
-.section8-div2{
+.pricing-calculator-container{
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow:  0 2px 5px 2px rgba(202, 202, 202, 0.5);
@@ -1080,14 +1088,14 @@ select option{
     box-sizing: border-box;
 }
 
-.section8-div2-1>hr{
+.pricing-calculator>hr{
     border: none;
     border-bottom: 1px solid #66666633;
     height:0;
     color:inherit;
     border-top-width:1px;
 }
-.section8-div2-1 h3{
+.pricing-calculator h3{
     color: #66666633;
     font-family: GT Super Display Bold;
     font-size: 30px;
@@ -1103,7 +1111,7 @@ select option{
     font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
     font-size: 12px;
 }
-.section8-div2-1>.input{
+.pricing-calculator>.revenue-input-div{
     display: flex;
     border: none;
     background-color: #f1f1f177;
@@ -1116,12 +1124,12 @@ select option{
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
-.section8-div2-1>.input>div{
+.pricing-calculator>.revenue-input-div>div{
     font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
     font-size: 30px;
     font-weight: 500;
 }
-.section8-div2-1>.input>input{
+.pricing-calculator>.revenue-input-div>input{
     background-color: #f1f1f133;
     border: none;
     outline: none;
@@ -1132,24 +1140,24 @@ select option{
     margin-left: 5px;
     width: 250px;
 }
-.section8-div3{
+.income-price-container{
     display: flex;
     font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
     justify-content: space-between;
     margin: 40px 0 30px 0;
 }
-.section8-div3-1 label,.section8-div2-1 span{
+.income-price label,.pricing-calculator span{
     color: #777777;
     font-size: 12px;
     font-weight: 500;
 }
-.section8-div3-1 label{
+.income-price label{
     line-height: 10px;
 }
-.section8-div3>div>div{
+.income-price-container>div>div{
     height: 50px;
 }
-.section8-div3-1>div>div{
+.income-price>div>div{
     color: #1d1d1f;
     font-size: 24px;
     font-weight: 500;
@@ -1157,40 +1165,40 @@ select option{
     margin-bottom: 0;
     margin-top: 0;
 }
-.section8-div3-1{
+.income-price{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.section9-div{
+.articles-container{
     margin: 0 auto;
     margin-bottom: 200px;
     margin-top: 70px;
     width: 500px;
 }
-.section9-div h1,.section9-div p,.section9-div div{
+.articles-container h1,.articles-container p,.articles-container div{
     text-align: center;
 }
-.section9-div h1{
+.articles-container h1{
     font-family: GT Super Display Bold;
     font-size: 54px;
     color: #1d1d1f;
     margin-bottom: 5px;
 }
-.section9-div p{
+.articles-container p{
     font-size: 20px;
     color: #1d1d1f;
     margin-top: 0;
 }
-.section9-div1>a>button{
+.articles-read-more>a>button{
     font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
     font-size: 16px;
     font-weight: 500;
 }
-.section9-div div{
+.articles-container div{
     margin-top: 100px;
 }
-.section9-div1 button{
+.articles-read-more button{
     background-color: #ffffff;
     border: 1px solid #e9e9e9;
     border-radius: 30px;
@@ -1202,13 +1210,13 @@ select option{
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
-.section9-div1 button:hover{
+.articles-read-more button:hover{
     cursor: pointer;
     background-color: #000;
     color: #ffffff;
 
 }
-.section10-div{
+.faq-container{
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
@@ -1216,31 +1224,31 @@ select option{
     margin-top: 40px;
     width: 90%;
 }
-.section10-div1{
+.faq-description{
     height: 330px;
     width: 40%;
 }
-.section10-div1>h1{
+.faq-description>h1{
     color: #1d1d1f;
     font-family: GT Super Display Bold;
     font-size: 60px;
     margin-bottom: 0;
     margin-top: 0;
 }
-.section10-div1>h2{
+.faq-description>h2{
     color: #777777;
     font-family: GT Super Display Bold;
     font-size: 36px;
     margin-bottom: 0;
     margin-top: 0;
 }
-.section10-div1>p{
+.faq-description>p{
     font-size: 18px;
 }
-.section10-div1>div{
+.faq-description>div{
     margin-top: 40px;
 }
-.section10-div1>div>a>button{
+.faq-description>div>a>button{
     background-color: #ffffff;
     border: 1px solid #e9e9e9;
     border-radius: 30px;
@@ -1255,17 +1263,17 @@ select option{
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
-.section10-div1>div>a>button:hover{
+.faq-description>div>a>button:hover{
     background-color: #000;
     cursor: pointer;
     color: #ffffff;
 }
-.section10-div2{
+.faq-questions{
     display: block;
     /* height: 500px; */
     width: 55%;
 }
-.section10-div2>div{
+.faq-questions>div{
     background-color: #f8f8f8;
     border-radius: 10px;
     box-sizing: border-box;
@@ -1294,17 +1302,17 @@ select option{
 .seen-div:hover{
     cursor: pointer;
 }
-.section10-text{
+.faq-text{
     font-size: 24px;
     font-weight: 500;
 }
-.section10-icon{
+.faq-icon{
     display: flex;
     color: #ececec;
     align-items: center;
     font-size: 50px;
 }
-.section11-div{
+.play-around-container{
     background: radial-gradient(50% 50% at 50% 50%,#ffbd2d 0,#fa0 100%);
     border-radius: 48px;
     box-shadow: 1px 10px 20px #00000033;
@@ -1320,21 +1328,21 @@ select option{
     -ms-border-radius: 48px;
     -o-border-radius: 48px;
 }
-.section11-div h1, .section11-div p{
+.play-around-container h1, .play-around-container p{
     text-align: center;
 }
-.section11-div div{
+.play-around-container div{
     margin-top: 30px;
     text-align: center;
 }
-.section11-div h1{
+.play-around-container h1{
     color: #ffffff;
     font-family: GT Super Display Bold;
     font-size: 48px;
     margin-bottom: 10px;
     text-shadow: 4px 4px #0007;
 }
-.section11-div p{
+.play-around-container p{
     color: #1d1d1f;
     font-size: 18px;
     font-weight: 100;
@@ -1343,7 +1351,7 @@ select option{
     opacity: .9;
     width: 90%;
 }
-.section11-div div button{
+.play-around-container div button{
     border: none;
     background-color: #16a34a;
     border-radius: 30px;
@@ -1357,11 +1365,11 @@ select option{
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
-.section11-div div button:hover{
+.play-around-container div button:hover{
     background-color: #07d653;
     cursor: pointer;
 }
-.footer-div-1{
+.footer-container{
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -1392,11 +1400,11 @@ select option{
     text-align: center;
     width: 200px;
 }
-.footer-div-1s{
+.footer-child2{
     box-sizing: border-box;
     width: 82%;
 }
-.footer-div-1s>hr{
+.footer-child2>hr{
     border: none;
     border-bottom: 1px solid #66666622;
     height:0;
@@ -1411,33 +1419,33 @@ select option{
     margin-bottom: 60px;
     width: 73%;
 }
-.footer-div2{
+.footer-links{
     display: flex;
     justify-content: space-between;
     font-size: small;
     width: 55%;
 }
-.footer-div2 h4{
+.footer-links h4{
     color: #bdbdbd;
     font-size: 18px;
     margin-bottom: 0;
 }
-.footer-div2-1, .footer-div2-2{
+.quick-links-container, .demo-playground-container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.footer-div2-1{
+.quick-links-container{
     height: 200px;
 }
-.footer-div2-2{
+.demo-playground-container{
     height: 170px;
 }
-.footer-div2-1 a, .footer-div2-2 a{
+.quick-links-container a, .demo-playground-container a{
     color: #1d1d1f;
     font-size: 14px;
 }
-.footer-div3{
+.footer-contacts{
     background-color: #16a34a;
     border-radius: 20px;
     box-sizing: border-box;
@@ -1454,10 +1462,10 @@ select option{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
-.footer-div3>span{
+.footer-contacts>span{
     font-weight: 500;
 }
-.footer-div3>hr{
+.footer-contacts>hr{
     border: none;
     border-bottom: 1px solid #ffffff33;
     height:0;
@@ -1465,19 +1473,19 @@ select option{
     border-top-width:1px;
     width: 170px;
 }
-.footer-div3>a{
+.footer-contacts>a{
     color: #ffffff;
     font-size: 14px;
     font-weight: 500;
 }
-.footer-div-2{
+.map-privacy-container{
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     width: 180px;
 }
-.footer-div-2>a{
+.map-privacy-container>a{
     font-size: 14px;
 }
 
@@ -1513,7 +1521,7 @@ select option{
     color: #ffffff;
 }
 
-.f-slant{
+.footer-slant{
     position: absolute;
     background-color: #fafafa;
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
@@ -1637,7 +1645,7 @@ video{
 .faq-modal-div2 .seen-div{
     height: 40px;
 }
-.faq-modal-div2 .seen-div .section10-text{
+.faq-modal-div2 .seen-div .faq-text{
     font-weight: 900;
 }
 .faq-slant{
@@ -1711,10 +1719,10 @@ video{
     outline: none;
     padding: 20px 24px;
     width: 45%;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 .article-input>input::placeholder{
     color: #a1a1a1;
@@ -1755,12 +1763,13 @@ video{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 360px)
 and (max-width: 600px) {
-    
     body{
+        /* background-color: #000; */
         display: block;
-        box-sizing: border-box;
-        margin: 0 auto;
+        box-sizing: margin-box;
+        /* margin: 0 auto; */
         min-width: 360px;
+        overflow-x: hidden;
     }
 
     header nav{
@@ -1837,13 +1846,13 @@ and (max-width: 600px) {
         font-size: 16px;
         line-height: 25px;
     }
-    .qt-slant{
+    .quick-tour-slant{
         clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
         height: 1250px;
         width: 100%;
         top: 680px;
     }
-    .uc-slant{
+    .usecases-slant{
         clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
         height: 1250px;
         width: 100%;
@@ -1996,7 +2005,7 @@ and (max-width: 600px) {
     .section5-div3-7>select{
         width: 98%;
     }
-    .section6-div{
+    .download-container{
         border-radius: 40px;
         height: 550px;
         width: 96%;
@@ -2005,77 +2014,124 @@ and (max-width: 600px) {
         -ms-border-radius: 40px;
         -o-border-radius: 40px;
     }
-    .section6-div1{
+    .download-icons{
         height: 150px;
     }
-    .icon{
-        border-radius: 80px;
-        height: 80px;
-        width: 80px;
-        -webkit-border-radius: 80px;
-        -moz-border-radius: 80px;
-        -ms-border-radius: 80px;
-        -o-border-radius: 80px;
+    .download-icon{
+        border-radius: 64px;
+        height: 64px;
+        width: 64px;
+        -webkit-border-radius: 64px;
+        -moz-border-radius: 64px;
+        -ms-border-radius: 64px;
+        -o-border-radius: 64px;
+}
+    .download-icon-txt{
+        font-size: 12px;
     }
-    .section6-div2{
+    .download-txts{
+        border: 1px solid white;
+        margin: 0 auto;
         margin-bottom: 50px;
+        width: 80%;
     }
-    .section6-div2>h2{
+    .download-txts>h2{
         font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
-        font-size: 33px;
+        font-size: 24px;
+        text-align: center;
     }
-    .section6-div3{
+    .download-txts>p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .download-btns{
         flex-direction: column;
-        height: 160px;
-        width: 200px;
+        height: 130px;
+        width: 56%;
     }
-    .section6-btn{
-        height: 70px;
+    .download-btn{
+        height: 60px;
+        width: 100%;
         padding: 16px 24px;
     }
-    .section7-div1{
+    .dispatchers-container{
+        border: 1px solid #000;
         flex-direction: column;
     }
-    .section7-div1>div{
+    .dispatchers-container>div{
         width: 100%;
     }
-    .large{
-        font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
-        font-size: 35px;
+    .just-for-dispatchers{
+        font-size: 24px;
+        text-align: center;
     }
-    .section7-div1-1>p{
-        font-size: 20px;
+    .something-light{
+        font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+        font-size: 24px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .dispatchers-txt>p{
+        font-size: 16px;
         line-height: 25px;
         text-align: center;
     }
-    .section7-items{
+    .dispatchers-list-item{
         margin: 0 auto;
     }
-    .section7-div1-3{
+    .dispatchers-list-item>p{
+        width: 68%;
+        text-align: left;
+    }
+    .dispatchers-btns-container{
         flex-direction: column;
-        height: 160px;
+        height: 150px;
         margin: 0 auto;
+        margin-top: 50px;
         width: 200px;
     }
-    .section7-btn{
+    .dispatchers-btn{
         padding: 14px 24px;
+        width: 200px;
     }
-    .section8-div{
+    .pricing-container{
         flex-direction: column;
+        height: 900px;
+        width: 90%;
     }
-    .section8-div1,.section8-div2{
+    .pricing-description,.pricing-calculator-container{
         width: 100%;
     }
-    .section10-div{
+    .pricing-description-txt h1{
+        font-size: 36px;
+    }
+    .pricing-description p{
+        font-size: 16px;
+        width: 85%;
+    }
+    .pricing-calculator-container{
+        height: 500px;
+    }
+    .pricing-calculator>h3{
+        font-size: 20px;
+        margin-bottom: 1dvh;
+    }
+    .pricing-calculator>hr{
+        margin: 20px auto;
+    }
+    .revenue-input-div{
+        background-color:  #000;
+    }
+    .faq-container{
         flex-direction: column;
     }
-    .section10-div1, .section10-div2{
+    .faq-description, .faq-questions{
         width: 100%;
     }
     .more-faq-btn{
         margin: 0 auto;
     }
-    .section11-div{
+    .play-around-container{
         border-radius: 0;
         width: 100vw;
         -webkit-border-radius: 0;
@@ -2083,11 +2139,11 @@ and (max-width: 600px) {
         -ms-border-radius: 0;
         -o-border-radius: 0;
     }
-    .section11-div h1{
+    .play-around-container h1{
         font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
         font-size: 30px;
     }
-    .footer-div-1{
+    .footer-container{
         flex-direction: column;
     }
     .footer-div1{
@@ -2098,7 +2154,7 @@ and (max-width: 600px) {
         flex-direction: column;
 
     }
-    .footer-div2{
+    .footer-links{
         /* margin: 0 auto; */
         flex-direction: column;
     }
@@ -2192,7 +2248,7 @@ and (max-width: 767px){
         font-size: 16px;
         line-height: 25px;
     }
-    .qt-slant{
+    .quick-tour-slant{
         position: absolute;
         background-color: #feebc833;
         clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
@@ -2202,7 +2258,7 @@ and (max-width: 767px){
         top: 1600px;
         z-index: -1;
     }
-    .uc-slant{
+    .usecases-slant{
         position: absolute;
         background-color: #feebc833;
         clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
@@ -2358,6 +2414,97 @@ and (max-width: 767px){
     }
     .section5-div3-7>select{
         width: 98%;
+    }
+    .download-container{
+        border-radius: 40px;
+        height: 550px;
+        width: 96%;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+    }
+    .download-icons{
+        width: 55%;
+        height: 150px;
+    }
+    .download-icon{
+        border-radius: 64px;
+        height: 64px;
+        width: 64px;
+        -webkit-border-radius: 64px;
+        -moz-border-radius: 64px;
+        -ms-border-radius: 64px;
+        -o-border-radius: 64px;
+}
+    .download-icon-txt{
+        font-size: 12px;
+    }
+    .download-txts{
+        border: 1px solid white;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 80%;
+    }
+    .download-txts>h2{
+        font-family: GT Super Display Bold;
+        font-size: 24px;
+        text-align: center;
+    }
+    .download-txts>p{
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .download-btns{
+        flex-direction: column;
+        height: 130px;
+        width: 38%;
+    }
+    .download-btn{
+        height: 60px;
+        width: 100%;
+        padding: 16px 24px;
+    }
+    .dispatchers-container{
+        border: 1px solid #000;
+        flex-direction: column;
+    }
+    .dispatchers-container>div{
+        width: 100%;
+    }
+    .just-for-dispatchers{
+        font-size: 24px;
+        text-align: center;
+    }
+    .something-light{
+        font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+        font-size: 24px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .dispatchers-txt>p{
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .dispatchers-list-item{
+        margin: 0 auto;
+    }
+    .dispatchers-list-item>p{
+        width: 68%;
+        text-align: left;
+    }
+    .dispatchers-btns-container{
+        flex-direction: column;
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 200px;
+    }
+    .dispatchers-btn{
+        padding: 14px 24px;
+        width: 200px;
     }
 }
 
@@ -2612,6 +2759,101 @@ and (max-width: 991px){
     .section5-div3-7>select{
         width: 98%;
     }
+    .download-container{
+        border-radius: 40px;
+        height: 550px;
+        width: 60%;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+    }
+    .download-icons{
+        margin: 10px;
+        width: 70%;
+        height: 180px;
+    }
+    .download-icons-child1,.download-icons-child2,.download-icons-child3{
+        height: 90px;
+    }
+    .download-icon{
+        border-radius: 60px;
+        height: 60px;
+        width: 60px;
+        -webkit-border-radius: 60px;
+        -moz-border-radius: 60px;
+        -ms-border-radius: 60px;
+        -o-border-radius: 60px;
+}
+    .download-icon-txt{
+        font-size: 12px;
+    }
+    .download-txts{
+        border: 1px solid white;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 80%;
+    }
+    .download-txts>h2{
+        font-family: GT Super Display Bold;
+        font-size: 30px;
+        text-align: center;
+    }
+    .download-txts>p{
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .download-btns{
+        flex-direction: column;
+        height: 130px;
+        width: 48%;
+    }
+    .download-btn{
+        height: 60px;
+        width: 100%;
+        padding: 16px 24px;
+    }
+    .dispatchers-container{
+        border: 1px solid #000;
+        flex-direction: column;
+    }
+    .dispatchers-container>div{
+        width: 100%;
+    }
+    .something-light{
+        font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+        font-size: 36px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .just-for-dispatchers{
+        font-size: 36px;
+        text-align: center;
+    }
+    .dispatchers-txt>p{
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .dispatchers-list-item{
+        margin: 0 auto;
+    }
+    .dispatchers-list-item>p{
+        width: 68%;
+        text-align: left;
+    }
+    .dispatchers-btns-container{
+        flex-direction: column;
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 200px;
+    }
+    .dispatchers-btn{
+        padding: 14px 24px;
+        width: 200px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -2840,6 +3082,124 @@ and (max-width: 1279px){
     }
     .section5-div3-7>select{
         width: 98%;
+    }
+    .download-container{
+        border-radius: 50px;
+        /* justify-content: space-around; */
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 300px;
+        height: 420px;
+        padding: 0;
+        width: 60%;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    .download-icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 70%;
+    }
+    .download-icons-child1,.download-icons-child2,.download-icons-child3{
+        height: 90px;
+    }
+    .download-icon{
+        border-radius: 60px;
+        height: 60px;
+        width: 60px;
+        -webkit-border-radius: 60px;
+        -moz-border-radius: 60px;
+        -ms-border-radius: 60px;
+        -o-border-radius: 60px;
+}
+    .download-txts{
+        margin-bottom: 40px;
+        width: 600px;
+    }
+    .download-txts>h2{
+        font-family: GT Super Display Bold;
+        font-size: 36px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .download-txts>p{
+        font-family: TT Norms Pro Light,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif!important;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 0;
+        text-align: center;
+    }
+    .download-btns{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 70%;
+    }
+    .download-btn{
+        background-color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        padding: 12px 24px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .download-btn:hover{
+        cursor: pointer;
+    }
+    .download-btn>div>ion-icon{
+        font-size: 30px;
+    }
+    .download-btn-txt{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+    .dispatchers-container{
+        flex-direction: column;
+    }
+    .dispatchers-container>div{
+        width: 100%;
+    }
+    .something-light{
+        font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+        font-size: 36px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .just-for-dispatchers{
+        font-size: 36px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .dispatchers-txt>p{
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .dispatchers-list-item{
+        margin: 0 auto;
+    }
+    .dispatchers-list-item>p{
+        width: 68%;
+        text-align: left;
+    }
+    .dispatchers-btns-container{
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 430px;
+    }
+    .dispatchers-btn{
+        padding: 14px 24px;
+        width: 200px;
     }
 }
 
