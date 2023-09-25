@@ -2647,7 +2647,7 @@ and (max-width: 767px){
         -moz-border-radius: 40px;
         -ms-border-radius: 40px;
         -o-border-radius: 40px;
-    }
+}
     .download-icons{
         width: 55%;
         height: 150px;
@@ -2916,7 +2916,7 @@ and (max-width: 991px){
     }
     .hero-div{
         height: 350px;
-        margin-bottom: 10px;
+        margin-bottom: 40px;
     }
     .hero-div h1{
         font-size: 60px;
@@ -2925,13 +2925,35 @@ and (max-width: 991px){
     }
     .hero-div>div>p{
         font-size: 20px;
-        line-height: 25px;
-        margin-top: 40px;
+        line-height: 1.5em;
+        margin-top: 20px;
         text-align: center;
         width: 60%;
     }
     .hero-img>img{
         width: 98%;
+    }
+    .quick-tour-slant{
+        position: absolute;
+        background-color: #feebc833;
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+        height: 1170px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 1290px;
+        z-index: -1;
+    }
+    .usecases-slant{
+        position: absolute;
+        background-color: #feebc833;
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+        height: 1350px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 2400px;
+        z-index: -1;
     }
     .quick-tour-div{
         height: 980px;
@@ -3013,7 +3035,6 @@ and (max-width: 991px){
         display: flex;
         flex-direction: column;
         margin-top: 40px;
-        margin-bottom: -40px;
         width: 100%;
     }
     .usecases-content-div1-2{
@@ -3029,11 +3050,11 @@ and (max-width: 991px){
         width: 90%;
     }
     .usecases-content-div2{
-        height: 90%;
+        height: 450px;
         box-sizing: border-box;
-        margin-top: 30px;
+        margin-top: 5px;
         padding: 30px 0;
-        width: 90%;
+        width: 100%;
     }
     .steps{
         font-size: 30px;
@@ -3045,8 +3066,9 @@ and (max-width: 991px){
         box-sizing: border-box;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 95%;
+        height: 410px;
         margin: 10px auto;
+        width: 100%;
     
     }
     .num-divs{
@@ -3057,12 +3079,11 @@ and (max-width: 991px){
     }
     .num{
         height: 20px;
-        margin-right: 10px;
-        margin-top: -40px;
+        margin-right: 20px;
     }
     .num>h1{
         font-family: GT Super Display Bold;
-        font-size: 72px;
+        font-size: 60px;
         line-height: 0.2px;
         height: 20px;
     }
@@ -3089,24 +3110,29 @@ and (max-width: 991px){
         width: 100%;
     }
     .section5-div>div{
+        /* border: 1px solid #000; */
         display: flex;
         flex-direction: column;
         width: 100%;
     }
     .section5-div11{
         height: 500px;
+        width: 100%;
     }
     .section5-div1{
         height: 280px;
+        margin: 0 auto;
+        padding: 0;
+        width: 86%;
     }
     .section5-div1>div>img{
-      width: 80%;
+      width: 40%;
     }
     .bandwagon{
-        font-size: 36px;
+        font-size: 54px;
     }
     .section5-div1>p{
-        font-size: 16px;
+        font-size: 18px;
     }
     .section5-div2{
         height: 430px;
@@ -3114,7 +3140,13 @@ and (max-width: 991px){
     }
     .section5-div2>div{
         height: 120px;
-        width: 100%;
+        width: 94%;
+    }
+    .step{
+        font-size: 12px;
+    }
+    .step-text-div>h3{
+        font-size: 20px;
     }
     .section5-div3{
         height: 400px;
@@ -3122,15 +3154,22 @@ and (max-width: 991px){
         width: 100%;
     }
     .section5-div3>div{
-        width: 100%;
+        width: 90%;
     }
     .section5-div3>div input, .section5-div3-6 textarea{
         font-size: 18px;
         height: 56px;
-        width: 80%;
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 94%;
+    }
+    .section5-div3>hr{
+        width: 84%;
     }
     #subdomain-input{
-        width: 55%;
+        margin-right: 0;
+        width: 80%;
     }
     .section5-div3-8 input{
         font-size: 18px;
@@ -3140,12 +3179,19 @@ and (max-width: 991px){
         height: 56px;
         width: 49px;
     }
-    .section5-div3-7>select{
+    .select-div>select{
         width: 98%;
     }
+    #select-div{
+        margin: 0 auto;
+        width:  85%;
+     }
     .download-container{
         border-radius: 40px;
         height: 550px;
+        margin-bottom: 150px;
+        padding-bottom: 60px;
+        padding-top: 60px;
         width: 60%;
         -webkit-border-radius: 40px;
         -moz-border-radius: 40px;
@@ -3153,9 +3199,10 @@ and (max-width: 991px){
         -o-border-radius: 40px;
     }
     .download-icons{
-        margin: 10px;
+        margin: 0 auto;
+        margin-bottom: 40px;
         width: 70%;
-        height: 180px;
+        height: 100px;
     }
     .download-icons-child1,.download-icons-child2,.download-icons-child3{
         height: 90px;
@@ -3174,7 +3221,8 @@ and (max-width: 991px){
     }
     .download-txts{
         margin: 0 auto;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
         width: 80%;
     }
     .download-txts>h2{
@@ -3190,6 +3238,7 @@ and (max-width: 991px){
     .download-btns{
         flex-direction: column;
         height: 130px;
+        margin-top: 40px;
         width: 48%;
     }
     .download-btn{
@@ -3206,11 +3255,13 @@ and (max-width: 991px){
     .something-light{
         font-family: TT Norms Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
         font-size: 36px;
+        line-height: 1em;
         margin-bottom: 0;
         text-align: center;
     }
     .just-for-dispatchers{
         font-size: 36px;
+        line-height: 1em;
         text-align: center;
     }
     .dispatchers-txt>p{
@@ -3321,6 +3372,18 @@ and (max-width: 991px){
         font-size: 18px;
         width: 79%;
     }
+    .footer-slant{
+        position: absolute;
+        background-color: #fafafa;
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+        height: 620px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 10600px;
+        z-index: -1;
+    
+    }
     .footer-container{
         width: 100%;
     }
@@ -3394,14 +3457,14 @@ and (max-width: 1279px){
     }
     .hero{
         height: 1200px;
-        margin-bottom: 340px;
+        margin-bottom: 100px;
     }
     .hero-div{
         margin-bottom: 100px;
     }
     .hero-div h1{
         font-size: 60px;
-        line-height: 10px;
+        line-height: 0.5em;
         margin-bottom: 20px;
     }
     .hero-div>div>p{
@@ -3413,6 +3476,28 @@ and (max-width: 1279px){
     }
     .hero-img>img{
         width: 98%;
+    }
+    .quick-tour-slant{
+        position: absolute;
+        background-color: #feebc833;
+        clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+        height: 900px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 1590px;
+        z-index: -1;
+    }
+    .usecases-slant{
+        position: absolute;
+        background-color: #feebc833;
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+        height: 1350px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 2410px;
+        z-index: -1;
     }
     .quick-tour-div{
         height: 700px;
@@ -3510,12 +3595,11 @@ and (max-width: 1279px){
      }
      .num{
          height: 20px;
-         margin-right: 10px;
-         margin-top: -40px;
+         margin-right: 20px;
      }
      .num>h1{
          font-family: GT Super Display Bold;
-         font-size: 72px;
+         font-size: 60px;
          line-height: 0.2px;
          height: 20px;
      }
@@ -3542,24 +3626,29 @@ and (max-width: 1279px){
         width: 100%;
     }
     .section5-div>div{
+        /* border: 1px solid #000; */
         display: flex;
         flex-direction: column;
         width: 100%;
     }
     .section5-div11{
         height: 500px;
+        width: 100%;
     }
     .section5-div1{
         height: 280px;
+        margin: 0 auto;
+        padding: 0;
+        width: 86%;
     }
     .section5-div1>div>img{
-      width: 80%;
+      width: 40%;
     }
     .bandwagon{
-        font-size: 36px;
+        font-size: 54px;
     }
     .section5-div1>p{
-        font-size: 16px;
+        font-size: 18px;
     }
     .section5-div2{
         height: 430px;
@@ -3567,7 +3656,13 @@ and (max-width: 1279px){
     }
     .section5-div2>div{
         height: 120px;
-        width: 100%;
+        width: 94%;
+    }
+    .step{
+        font-size: 12px;
+    }
+    .step-text-div>h3{
+        font-size: 20px;
     }
     .section5-div3{
         height: 400px;
@@ -3575,15 +3670,22 @@ and (max-width: 1279px){
         width: 100%;
     }
     .section5-div3>div{
-        width: 100%;
+        width: 90%;
     }
     .section5-div3>div input, .section5-div3-6 textarea{
         font-size: 18px;
         height: 56px;
-        width: 80%;
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 94%;
+    }
+    .section5-div3>hr{
+        width: 84%;
     }
     #subdomain-input{
-        width: 55%;
+        margin-right: 0;
+        width: 80%;
     }
     .section5-div3-8 input{
         font-size: 18px;
@@ -3593,15 +3695,18 @@ and (max-width: 1279px){
         height: 56px;
         width: 49px;
     }
-    .section5-div3-7>select{
+    .select-div>select{
         width: 98%;
     }
+    #select-div{
+        margin: 0 auto;
+        width:  85%;
+     }
     .download-container{
         border-radius: 50px;
-        /* justify-content: space-around; */
         margin: auto;
         margin-top: 100px;
-        margin-bottom: 300px;
+        margin-bottom: 150px;
         height: 420px;
         padding: 0;
         width: 60%;
@@ -3678,6 +3783,8 @@ and (max-width: 1279px){
     }
     .dispatchers-container{
         flex-direction: column;
+        margin-left: 100px;
+        margin-right: 100px;
     }
     .dispatchers-container>div{
         width: 100%;
@@ -3781,6 +3888,18 @@ and (max-width: 1279px){
     .play-around-container p{
         font-size: 18px;
         width: 80%;
+    }
+    .footer-slant{
+        position: absolute;
+        background-color: #fafafa;
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+        height: 620px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 10500px;
+        z-index: -1;
+    
     }
     .footer-container{
         width: 100%;
